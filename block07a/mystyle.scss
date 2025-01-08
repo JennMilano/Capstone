@@ -1,0 +1,20 @@
+// mystyle.scss
+
+$primary-color: #8a737d;
+$secondary-color: #d2b0a2;
+$accent-color: #9f9a7f;
+$text-color: #33312e;
+$neutral-color: #d2c4c425;
+$background-color: #f7f0f7;
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: $background-color;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}

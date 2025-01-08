@@ -1,0 +1,66 @@
+.art {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* adds spacing */
+    gap: 1em;
+  }
+  
+  .my-art-container .welcome {
+    background-color: blue;
+    font-size: 10rem;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .my-art-container .to {
+    background-color: coral;
+    font-size: 24px;
+    z-index: 3;
+    position: relative;
+    right: 50px;
+  }
+  
+  .my-art-container .my {
+    background-color: aquamarine;
+    z-index: 2;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    font-size: 80%;
+  }
+  
+  .my-art-container .world {
+    background-color: white;
+    z-index: 4;
+    position: relative;
+    top: 0px;
+    right: 60%;
+    border-radius: 100%;
+  }
+  
+  @media screen and (max-width: 1680px) {
+    .my-art-container .development {
+      width: 50%;
+      font-size: 5rem;
+    }
+    .my-art-container .is {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .my-art-container .development {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .my-art-container .is {
+      left: -20px;
+    }
+    .my-art-container .fun {
+      bottom: -190%;
+      left: -9%;
+    }
+  }
