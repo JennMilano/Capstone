@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
     const { data, isLoading, isError } = useFetchProductsQuery();
-    console.log("Product data:", data);
+    //console.log("Product data:", data);
 
     if (isLoading) {
         return <section>
