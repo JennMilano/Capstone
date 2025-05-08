@@ -1,7 +1,8 @@
 import './index.css'
 import { Routes, Route } from 'react-router-dom'
 import Products from './components/Products'
-
+import React from 'react'
+import SingleProduct from './components/SingleProduct'
 //import AllPlayers from "./features/AllPlayers";
 //import MainRoute from './features/MainRoute'
 //import NewPlayerForm from './features/NewPlayerForm'
