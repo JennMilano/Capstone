@@ -29,3 +29,4 @@ export const storeApi = createApi({
 });
 
 export const { useGetProductsQuery, useGetUsersQuery, useGetCartQuery } = storeApi; 
+ 
