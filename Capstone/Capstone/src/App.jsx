@@ -12,9 +12,12 @@ function App() {
   // This component renders the Players component inside a div
   // This div has a class of 'App', which we could use for styling
   return (
+    <section>
     <Routes>
       <Route path="/" element={<Products />} />
+      <Routee path="/api/products/:product_id" element={<SingleProduct />} />
     </Routes>
+    </section>
   );
 }
 
