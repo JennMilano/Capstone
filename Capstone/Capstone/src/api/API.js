@@ -1,1 +1,37 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+export const api = createApi({
+    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000" }),
+    reducerPath: "api",
+    tagTypes: ["Products", "Users", "Cart"],
+    endpoints: (builder) => ({
+        fetchProducts: builder.query({
+            query: () => "/api/products",
+            providesTags: ["Products"],
+        }),
+        fetchUsers: builder.query({
+            query: () => "/api/users",
+            providesTags: ["Users"],
+        }),
+        fetchCart: builder.query({
+            query: () => "/api/cart",
+            providesTags: ["Cart"],
+        }),
+        fetchSingleUser: builder.query({
+            query: (user_id) => `/api/users/${user_id}`,
+            providesTags: ["Users"],
+          }),
+        fetchSingleProduct: builder.query({
+            query: (product_id) => `/api/products/${product_id}`,
+            providesTags: ["Products"],
+        }),
+        addToCart: builder.mutation({
+            query: ({ user_id, product_id }) => ({
+                url: `/api/user_cart/${user_id}`,
+                method: "POST",
+                body: { product_id },
+            }),
+            invalidatesTags: ["Cart"],
+        }),
+    }),
+});
